@@ -51,7 +51,7 @@
             </div>
 
             <ul class="nav">
-                <li class="active">
+                <li > <!-- 假如需要標記 增加 class="active"-->
                     <a href="dashboard.html">
                         <i class="ti-panel"></i>
                         <p>Dashboard</p>
