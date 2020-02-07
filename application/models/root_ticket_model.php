@@ -6,7 +6,8 @@ class Root_ticket_model extends CI_Model
     public function get_ticket()
     {
         $this->db->select('*');
-		$this->db->from('ticket_activty');
+        $this->db->from('ticket_activty');
+        $this->db->limit('10');
 		$rows = $this->db->get()->result_array();
         return $rows;
     }
