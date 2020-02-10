@@ -43,6 +43,29 @@ class Index extends CI_Controller {
     public function push_text()
 	{
         //新增資料
+        $this->load->library('Sha3');
+        $data['b'] = Sha3::hash(md5('123'), 256);
+        $this->load->model(['test_model','root_ticket_model' ]);
+        $url = $this->input->post('url');
+        $system = $this->input->post('system');
+        $ticket_name = $this->input->post('ticket_name');
+        $ticket_date = $this->input->post('ticket_date');
+        $start_ts = strtotime($this->input->post('start_ts'));
+        $end_ts = strtotime($this->input->post('end_ts'));
+        //$data['a'] = strtotime($this->input->post('date_time'));
+       /* if(!$this->root_ticket_model->insert_ticket($system,$url,$ticket_name,$ticket_date,$start_ts,$end_ts)){
+            show_error('更新失敗');
+        }*/
+        $data_head['tittle'] = 'push_text';
+        $data['a'] = $this->root_ticket_model->get_ticket();
+        $this->load->view('head',$data_head);
+        $this->load->view('login', $data);
+        $this->load->view('foot');
+        
+    }
+    public function login_sub()
+	{
+        //新增資料
         $this->load->model(['test_model','root_ticket_model' ]);
         $url = $this->input->post('url');
         $system = $this->input->post('system');
