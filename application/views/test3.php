@@ -1,6 +1,6 @@
 <div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+			<div class="wrap-login100 p-l-30 p-r-30 p-t-20 p-b-20">
 				<form class="login100-form validate-form flex-sb flex-w">
 					<span class="login100-form-title p-b-32">
 						Account Login

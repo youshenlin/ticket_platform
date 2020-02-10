@@ -72,9 +72,7 @@
     });
   }
 
-  $.fn.checkbox.defaults = {
-    template: '<span class="icons"><span class="first-icon fa fa-square fa-base"></span><span class="second-icon fa fa-check-square fa-base"></span></span>'
-  }
+
 
 
  /* CHECKBOX NO CONFLICT
