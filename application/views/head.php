@@ -31,10 +31,11 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="<?php echo base_url();?>assets/css/themify-icons.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/main.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/util.css" rel="stylesheet">
 
 </head>
 <body>
-
 <div class="wrapper">
     <div class="sidebar" data-background-color="white" data-active-color="danger">
 
