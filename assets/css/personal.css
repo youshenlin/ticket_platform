@@ -1,6 +1,23 @@
 .icon{
     width:1.5vw;
 }
+
+@media screen and (min-width: 800px) {
+    .icon{
+        width:1.5vw;
+    }
+}
+@media screen and (max-width: 600px){
+    .icon{
+        width:3.5vw;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .icon{
+        width:2.3vw;
+    }
+} 
+
 /*
 icon 顏色 #93918d
 flaticon
